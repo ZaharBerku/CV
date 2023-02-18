@@ -1,0 +1,43 @@
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "prettier",
+    "jest",
+    "jest-dom",
+    "testing-library",
+    "import",
+    "@typescript-eslint",
+    "unused-imports"
+  ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "requireConfigFile": false,
+    "ecmaVersion": "latest", 
+    "sourceType": "module",
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "no-prototype-builtins": "off",
+    "no-unused-vars": "off",
+    "require-yield": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": "warn",
+    "no-undef": "off",
+    "quotes":["warn", "double"],
+    "prefer-const": "warn",
+    "comma-dangle": ["error", "always-multiline"],
+    "semi": ["warn", "always"],
+    "import/order": ["error"],
+    "import/no-duplicates": ["error", {"prefer-inline": true}],
+    "import/extensions": ["error", "always"],
+    "import/no-unresolved": "error",
+    "unused-imports/no-unused-imports-ts": 2
+  }
+}
