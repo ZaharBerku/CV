@@ -38,7 +38,12 @@
     // Report an error for unused labels instead of just a warning.
     "allowUnusedLabels": false,
     "paths": {
-      "@/*": ["./src/*"]
+      "@components": ["src/components/index"],
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@utils/*": ["src/utils/*"]
     }
   }
 }
