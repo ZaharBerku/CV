@@ -1,2 +1,3 @@
 export { Button } from "./Button";
-export {} from "./Typography";
+export { Typography } from "./Typography";
+export { Box } from "./Box";

@@ -1,9 +1,8 @@
 import type { HTMLAttributes } from "react";
 
-type TypographyProps = HTMLAttributes<HTMLParagraphElement | HTMLHeadingElement> & {
-  variant?: Variants;
+export type TypographyProps = HTMLAttributes<HTMLParagraphElement | HTMLHeadingElement> & {
+  tag?: TypographyTag;
+  text?: string;
 };
 
-type Variants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
-
-export type { TypographyProps, Variants };
+export type TypographyTag = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";

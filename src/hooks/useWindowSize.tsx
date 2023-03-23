@@ -1,21 +1,19 @@
 import { useCallback, useState, useEffect } from "react";
 
 type Size = {
-  cellX: number;
-  cellY: number;
+  width: number;
+  height: number;
 };
 
-export const getNumberOfCells = (size: number, sizeCell: number) => Math.floor(size / sizeCell);
-
-function useWindowSize(sizeCell: number): Size {
-  const [cell, setCell] = useState<Size>({
-    cellX: getNumberOfCells(window?.innerWidth, sizeCell),
-    cellY: getNumberOfCells(window?.innerHeight, sizeCell),
+function useWindowSize(): Size {
+  const [size, setSize] = useState<Size>({
+    width: window?.innerWidth,
+    height: window?.innerHeight,
   });
   const handleSize = useCallback(() => {
-    setCell({
-      cellX: getNumberOfCells(window?.innerWidth || 0, sizeCell),
-      cellY: getNumberOfCells(window?.innerHeight || 0, sizeCell),
+    setSize({
+      width: window?.innerWidth || 0,
+      height: window?.innerHeight || 0,
     });
   }, [window?.innerHeight, window?.innerWidth]);
 
@@ -27,7 +25,7 @@ function useWindowSize(sizeCell: number): Size {
     };
   }, [window?.innerHeight, window?.innerWidth]);
 
-  return cell;
+  return size;
 }
 
 export { useWindowSize };

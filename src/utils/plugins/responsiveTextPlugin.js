@@ -18,7 +18,7 @@ module.exports = ({ extraFonts }) =>
 
       const styles = {
         fontSize: pxToRem(parsePx(config.DEFAULT.fontSize) * multiplicator),
-        lineHeight: pxToRem(parsePx(config.DEFAULT.lineHeight)),
+        lineHeight: config.DEFAULT.lineHeight,
         letterSpacing: config.DEFAULT.letterSpacing,
       };
 
@@ -30,7 +30,7 @@ module.exports = ({ extraFonts }) =>
         if (config[key]) {
           styles[`@media (min-width: ${screens[key]})`] = {
             fontSize: pxToRem(parsePx(config[key].fontSize) * multiplicator),
-            lineHeight: pxToRem(parsePx(config[key].lineHeight)),
+            lineHeight: config[key].lineHeight,
             letterSpacing: config[key].letterSpacing,
           };
         }
