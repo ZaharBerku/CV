@@ -55,6 +55,7 @@ module.exports = {
         "2xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
         inner: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
         none: "none",
+        card: "4px 5px 26px rgba(217, 217, 217, 0.35)",
       },
       container: {},
       flex: {
@@ -394,6 +395,22 @@ module.exports = {
             fontSize: "104px",
           },
         },
+        "body-4xl": {
+          DEFAULT: {
+            fontWeight: "700",
+            fontSize: "16px",
+            lineHeight: "144%",
+          },
+          xs: {
+            fontSize: "20px",
+          },
+          sm: {
+            fontSize: "26px",
+          },
+          md: {
+            fontSize: "32px",
+          },
+        },
         "name": {
           DEFAULT: {
             fontWeight: "400",
@@ -429,6 +446,12 @@ module.exports = {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+        },
+        ".flex-wrapper-column": {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
         },
       });
       addUtilities({
