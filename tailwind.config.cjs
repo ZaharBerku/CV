@@ -378,7 +378,6 @@ module.exports = {
         "23.25": "23.25rem",
       },
       text: {
-
         "body-6xl": {
           DEFAULT: {
             fontWeight: "700",
