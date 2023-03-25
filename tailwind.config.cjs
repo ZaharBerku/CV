@@ -410,10 +410,19 @@ module.exports = {
             fontSize: "30px",
           },
         },
-        "base": {
+        "primary-button": {
           DEFAULT: {
-            fontSize: "24px",
+            fontSize: "12px",
             lineHeight: "145%",
+          },
+          xs: {
+            fontSize: "14px",
+          },
+          sm: {
+            fontSize: "19px",
+          },
+          md: {
+            fontSize: "24px",
           },
         },
       },
