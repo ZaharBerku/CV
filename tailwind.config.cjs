@@ -7,14 +7,15 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    screens: {
+      xs: "375px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
-      },
       colors: ({ colors }) => ({
         ...colors,
         primary: {
@@ -377,31 +378,37 @@ module.exports = {
         "23.25": "23.25rem",
       },
       text: {
+
+        "body-6xl": {
+          DEFAULT: {
+            fontWeight: "700",
+            fontSize: "45px",
+            lineHeight: "110%",
+          },
+          xs: {
+            fontSize: "60px",
+          },
+          sm: {
+            fontSize: "80px",
+          },
+          md: {
+            fontSize: "104px",
+          },
+        },
         "name": {
           DEFAULT: {
             fontWeight: "400",
-            fontSize: "30px",
+            fontSize: "14px",
             lineHeight: "143%",
           },
-        },
-        "body": {
-          DEFAULT: {
-            fontWeight: "700",
-            fontSize: "104px",
-            lineHeight: "110%",
-          },
-          "1": {
-            fontWeight: "400",
-            fontSize: "32px",
-            lineHeight: "144%",
-          },
-          "2": {
+          xs: {
             fontSize: "18px",
-            lineHeight: "21px",
           },
-          "3": {
-            fontSize: "14px",
-            lineHeight: "16px",
+          sm: {
+            fontSize: "24px",
+          },
+          md: {
+            fontSize: "30px",
           },
         },
         "base": {
