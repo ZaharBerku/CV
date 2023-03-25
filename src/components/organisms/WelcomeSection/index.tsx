@@ -4,7 +4,7 @@ import { WelcomeBackground, WelcomeTitle } from "@components/molecules";
 
 const WelcomeSection: FC = () => {
   return (
-    <Box.Container className="relative h-screen w-screen">
+    <Box.Container>
       <WelcomeBackground />
       <WelcomeTitle />
     </Box.Container>
