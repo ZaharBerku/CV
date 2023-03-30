@@ -11,7 +11,7 @@ const WelcomeBackground: FC = () => {
   const cellX = useMemo(() => getNumberOfCells(width, CELL_SIZE), [width]);
   return (
     <Box.Wrapper
-      className={'w-screen h-screen grid -z-10'}
+      className={'h-screen grid -z-10'}
       style={{
         gridTemplateColumns: `repeat(${cellX}, 1fr)`,
         gridTemplateRows: `repeat(${cellY}, 1fr)`,

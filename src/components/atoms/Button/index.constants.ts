@@ -1,7 +1,7 @@
 import type { Color, Size, Position, Roundness } from './index.types';
 
 const colorClasses: Record<Color, string> = {
-  'primary': 'text-white bg-primary h-8 xs:h-9 md:h-3.4 m-1',
+  'primary': 'text-white bg-primary-gradient h-8 xs:h-9 md:h-3.4 m-1',
 };
 
 const sizeClasses: Record<Size, string> = {

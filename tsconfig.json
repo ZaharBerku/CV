@@ -41,6 +41,7 @@
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
       "@hooks/*": ["src/hooks/*"],
+      "@services/*": ["src/services/*"],
       "@layouts/*": ["src/layouts/*"],
       "@utils/*": ["src/utils/*"]
     }

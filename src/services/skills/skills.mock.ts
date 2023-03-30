@@ -1,6 +1,4 @@
-import { Icon } from '@components/atoms';
-
-const skills = [
+export const skills = [
   {
     'toolName': 'React',
     'toolMastery': '85%',
@@ -32,5 +30,3 @@ const skills = [
     'toolIcon': 'CssIcon',
   },
 ];
-
-export { skills };

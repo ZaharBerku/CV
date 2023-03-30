@@ -20,8 +20,12 @@ module.exports = {
         ...colors,
         primary: {
           DEFAULT: '#9747FF',
+          gradient: '',
         },
       }),
+      backgroundImage: {
+        'primary-gradient': 'linear-gradient(180deg, #9747FF 0%, #6F00FF 100%)',
+      },
       borderColor: ({ theme }) => ({
         ...theme('colors'),
         DEFAULT: theme('colors.gray.200', 'currentColor'),
@@ -37,6 +41,7 @@ module.exports = {
         xl: '0.75rem',
         '2xl': '1rem',
         '3xl': '1.5rem',
+        '12xl': '6.5rem',
         full: '9999px',
       },
       borderWidth: {
@@ -375,6 +380,8 @@ module.exports = {
         50: '50',
       },
       spacing: {
+        'px': "1px",
+        'px2': "2px",
         '3.4': '3.438rem',
         '17.3': '17.313rem',
         '23.25': '23.25rem',
