@@ -1,16 +1,16 @@
 import type { Color, Size, Position, Roundness } from "./index.types";
 
 const colorClasses: Record<Color, string> = {
-  "primary": "text-white text-base bg-primary h-3.4 m-1",
+  "primary": "text-white bg-primary h-8 xs:h-9 md:h-3.4 m-1",
 };
 
 const sizeClasses: Record<Size, string> = {
   none: "text-xs p-0",
   xs: "text-xs px-2 py-0.5",
   sm: "text-sm px-3 py-1",
-  md: "max-w-23.25 px-2.5",
+  md: "text-primary-button px-2.5",
   lg: "text-base px-4 py-2",
-  xl: "text-base px-6 py-2.5",
+  xl: "px-6 py-2.5",
 };
 
 const iconSizeClasses: Record<Size, string> = {

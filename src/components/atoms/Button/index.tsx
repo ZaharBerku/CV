@@ -10,19 +10,20 @@ const Button: FC<ButtonProps> = ({
   positionText = "center",
   sizeButton = "md",
   className,
-  full = true,
+  full = false,
   ...props
 }) => {
   return (
     <button
       className={cx(
-        "flex",
+        "flex px-24",
         full ? "w-full" : "w-fit",
         colorClasses[color],
         borderClasses[rounded],
         positionClasses[positionText],
         sizeClasses[sizeButton],
-        className
+        className,
+         " max-w"
       )}
       {...props}
     >
