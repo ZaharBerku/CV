@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState, useEffect } from 'react';
 
 type Size = {
   width: number;
@@ -18,10 +18,10 @@ function useWindowSize(): Size {
   }, [window?.innerHeight, window?.innerWidth]);
 
   useEffect(() => {
-    window.addEventListener("resize", handleSize);
+    window.addEventListener('resize', handleSize);
 
     return () => {
-      window.removeEventListener("resize", handleSize);
+      window.removeEventListener('resize', handleSize);
     };
   }, [window?.innerHeight, window?.innerWidth]);
 

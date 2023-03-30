@@ -1,7 +1,7 @@
-import type { FC } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Box } from "@components/atoms";
-import { SectionTitle, ToolCard } from "@components/molecules";
+import type { FC } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Box } from '@components/atoms';
+import { SectionTitle, ToolCard } from '@components/molecules';
 
 type SkillsSectionProps = {};
 
@@ -31,28 +31,28 @@ const SkillsSection: FC<SkillsSectionProps> = () => {
         }}
       >
         <SwiperSlide>
-          <ToolCard name={"React"} mastery={"85%"} typeToolIcon={"ReactIcon"} />
+          <ToolCard name={'React'} mastery={'85%'} typeToolIcon={'ReactIcon'} />
         </SwiperSlide>
         <SwiperSlide>
-          <ToolCard name={"React"} mastery={"85%"} typeToolIcon={"ReactIcon"} />
+          <ToolCard name={'React'} mastery={'85%'} typeToolIcon={'ReactIcon'} />
         </SwiperSlide>
         <SwiperSlide>
-          <ToolCard name={"React"} mastery={"85%"} typeToolIcon={"ReactIcon"} />
+          <ToolCard name={'React'} mastery={'85%'} typeToolIcon={'ReactIcon'} />
         </SwiperSlide>
         <SwiperSlide>
-          <ToolCard name={"React"} mastery={"85%"} typeToolIcon={"ReactIcon"} />
+          <ToolCard name={'React'} mastery={'85%'} typeToolIcon={'ReactIcon'} />
         </SwiperSlide>
         <SwiperSlide>
-          <ToolCard name={"React"} mastery={"85%"} typeToolIcon={"ReactIcon"} />
+          <ToolCard name={'React'} mastery={'85%'} typeToolIcon={'ReactIcon'} />
         </SwiperSlide>
         <SwiperSlide>
-          <ToolCard name={"React"} mastery={"85%"} typeToolIcon={"ReactIcon"} />
+          <ToolCard name={'React'} mastery={'85%'} typeToolIcon={'ReactIcon'} />
         </SwiperSlide>
         <SwiperSlide>
-          <ToolCard name={"React"} mastery={"85%"} typeToolIcon={"ReactIcon"} />
+          <ToolCard name={'React'} mastery={'85%'} typeToolIcon={'ReactIcon'} />
         </SwiperSlide>
         <SwiperSlide>
-          <ToolCard name={"React"} mastery={"85%"} typeToolIcon={"ReactIcon"} />
+          <ToolCard name={'React'} mastery={'85%'} typeToolIcon={'ReactIcon'} />
         </SwiperSlide>
       </Swiper>
     </Box.Container>

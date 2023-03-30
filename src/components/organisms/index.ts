@@ -1,2 +1,2 @@
-export { WelcomeSection } from "./WelcomeSection";
-export { SkillsSection } from "./SkillsSection";
+export { WelcomeSection } from './WelcomeSection';
+export { SkillsSection } from './SkillsSection';

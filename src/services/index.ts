@@ -1,1 +1,1 @@
-export { getSkills } from "./skills";
+export { getSkills } from './skills';

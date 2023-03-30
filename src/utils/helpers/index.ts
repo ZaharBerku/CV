@@ -1,1 +1,1 @@
-export { createComponent } from "./createComponent.helper";
+export { createComponent } from './createComponent.helper';

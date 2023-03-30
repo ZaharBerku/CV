@@ -19,7 +19,7 @@
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
     "requireConfigFile": false,
-    "ecmaVersion": "latest", 
+    "ecmaVersion": "latest",
     "sourceType": "module",
     "babelOptions": {
       "presets": ["@babel/preset-react"]
@@ -42,20 +42,23 @@
     "react/react-in-jsx-scope": "off",
     "prettier/prettier": "warn",
     "no-undef": "off",
-    "quotes":["warn", "double"],
+    "quotes": ["warn", "double"],
     "prefer-const": "warn",
     "semi": ["warn", "always"],
     "import/order": ["error"],
-    "import/no-duplicates": ["error", {"prefer-inline": true}],
-    "import/extensions": ["error", "ignorePackages",
-    {
-      "": "never",
-      "js": "never",
-      "jsx": "never",
-      "ts": "never",
-      "tsx": "never",
-      "mjs":"never"
-    }],
+    "import/no-duplicates": ["error", { "prefer-inline": true }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "": "never",
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never",
+        "mjs": "never"
+      }
+    ],
     "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
     "unused-imports/no-unused-imports-ts": 2
   }

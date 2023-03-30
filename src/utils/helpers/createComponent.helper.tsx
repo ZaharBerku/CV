@@ -1,5 +1,10 @@
-import React, { forwardRef } from "react";
-import type { ElementType, HTMLAttributes, PropsWithChildren, ReactNode } from "react";
+import React, { forwardRef } from 'react';
+import type {
+  ElementType,
+  HTMLAttributes,
+  PropsWithChildren,
+  ReactNode,
+} from 'react';
 
 export type ComponentProps<T> = PropsWithChildren<{
   tag: ElementType;
@@ -9,7 +14,7 @@ export type ComponentProps<T> = PropsWithChildren<{
 
 const Component = <T,>(
   { tag: Component, children, content, ...props }: ComponentProps<T>,
-  ref: React.ForwardedRef<T>
+  ref: React.ForwardedRef<T>,
 ) => {
   return (
     <Component ref={ref} {...props}>

@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from "react";
+import type { HTMLAttributes } from 'react';
 
 export type BoxComponentProps = HTMLAttributes<HTMLElement> & {
   tag?: keyof JSX.IntrinsicElements;
@@ -10,4 +10,4 @@ export type BoxWrapperProps = HTMLAttributes<HTMLElement> & {
   content?: string;
 };
 
-export type BoxWrapperTag = "section" | "div" | "main";
+export type BoxWrapperTag = 'section' | 'div' | 'main';

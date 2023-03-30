@@ -1,10 +1,15 @@
-import type { FC } from "react";
-import type {IconProps } from './index.types';
-import { includedIcons } from "./index.constants";
+import type { FC } from 'react';
+import type { IconProps } from './index.types';
+import { includedIcons } from './index.constants';
 
-
-
-const Icon: FC<IconProps> = ({ type, className, onClick, viewHeight, viewWidth, ...props }) => {
+const Icon: FC<IconProps> = ({
+  type,
+  className,
+  onClick,
+  viewHeight,
+  viewWidth,
+  ...props
+}) => {
   const IconSelected = (includedIcons as any)[type];
 
   if (!IconSelected) {

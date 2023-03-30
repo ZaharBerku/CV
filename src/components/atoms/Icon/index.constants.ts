@@ -1,4 +1,11 @@
-import { CssIcon, FormikIcon, HTMLIcon, JSIcon, NextJSICon, ReactIcon } from "@assets/images/icon";
+import {
+  CssIcon,
+  FormikIcon,
+  HTMLIcon,
+  JSIcon,
+  NextJSICon,
+  ReactIcon,
+} from '@assets/images/icon';
 
 export const includedIcons = {
   CssIcon,

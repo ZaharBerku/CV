@@ -1,4 +1,4 @@
-import type { includedIcons } from "./index.constants";
+import type { includedIcons } from './index.constants';
 
 export type IconType = keyof typeof includedIcons | string;
 

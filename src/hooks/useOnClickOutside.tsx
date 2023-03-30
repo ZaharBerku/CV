@@ -1,12 +1,12 @@
-import type { RefObject } from "react";
-import { useEventListener } from "@hooks/index";
+import type { RefObject } from 'react';
+import { useEventListener } from '@hooks/index';
 
 type Handler = (event: MouseEvent | Event) => void;
 
 function useOnClickOutside<T extends HTMLElement = HTMLElement>(
   ref: RefObject<T>,
   handler: Handler,
-  mouseEvent: "mousedown" | "mouseup" = "mousedown"
+  mouseEvent: 'mousedown' | 'mouseup' = 'mousedown',
 ): void {
   useEventListener(mouseEvent, (event) => {
     const el = ref?.current;
