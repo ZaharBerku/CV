@@ -17,13 +17,13 @@ const WelcomeTitle: FC<WelcomeTitleProps> = () => {
           tag={'h1'}
           text={'Welcome to my website'}
         />
+        <Button
+          className="pointer-events-auto"
+          onClick={() => console.log('click')}
+        >
+          Discover
+        </Button>
       </Box.Wrapper>
-      <Button
-        className="absolute top-3/4 left-1/2 -translate-x-2/4 -translate-y-2/4 z-20"
-        onClick={() => console.log('click')}
-      >
-        Discover
-      </Button>
     </>
   );
 };
