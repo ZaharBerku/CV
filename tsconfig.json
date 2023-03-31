@@ -7,7 +7,6 @@
     "target": "ESNext",
     "baseUrl": ".",
     "esModuleInterop": true,
-    "importsNotUsedAsValues": "error",
     "strict": true,
     // Enable node-style module resolution, for things like npm package imports.
     "moduleResolution": "node",

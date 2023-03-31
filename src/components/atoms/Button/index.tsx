@@ -28,7 +28,6 @@ const Button: FC<ButtonProps> = ({
         positionClasses[positionText],
         sizeClasses[sizeButton],
         className,
-        ' max-w',
       )}
       {...props}
     >
