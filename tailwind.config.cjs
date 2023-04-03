@@ -428,6 +428,38 @@ module.exports = {
             fontSize: '32px',
           },
         },
+        'span-2xl': {
+          DEFAULT: {
+            fontWeight: '700',
+            fontSize: '10px',
+            lineHeight: '144%',
+          },
+          xs: {
+            fontSize: '12px',
+          },
+          sm: {
+            fontSize: '14px',
+          },
+          md: {
+            fontSize: '18px',
+          },
+        },
+        'span-xl': {
+          DEFAULT: {
+            fontWeight: '400',
+            fontSize: '9px',
+            lineHeight: '144%',
+          },
+          xs: {
+            fontSize: '11px',
+          },
+          sm: {
+            fontSize: '13px',
+          },
+          md: {
+            fontSize: '16px',
+          },
+        },
         'name': {
           DEFAULT: {
             fontWeight: '400',
