@@ -380,13 +380,22 @@ module.exports = {
         50: '50',
       },
       spacing: {
-        'px': "1px",
-        'px2': "2px",
+        'px': '1px',
+        'px2': '2px',
         '3.4': '3.438rem',
         '17.3': '17.313rem',
+        '17.5': '17.5rem',
         '23.25': '23.25rem',
+        '31.25': '31.25rem',
       },
       text: {
+        'body-7xl': {
+          DEFAULT: {
+            fontWeight: '400',
+            fontSize: '230px',
+            lineHeight: '60%',
+          },
+        },
         'body-6xl': {
           DEFAULT: {
             fontWeight: '700',
@@ -482,7 +491,15 @@ module.exports = {
             display: 'none',
           },
         },
-
+        '.horizontal-tb': {
+          writingMode: 'horizontal-tb',
+        },
+        '.vertical-rl': {
+          writingMode: 'vertical-rl',
+        },
+        '.vertical-lr': {
+          writingMode: 'vertical-lr',
+        },
         '.scrollbar-default': {
           /* IE and Edge */
           '-ms-overflow-style': 'auto',
