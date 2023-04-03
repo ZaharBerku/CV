@@ -1,11 +1,16 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import { WelcomeSection, SkillsSection } from '@components/organisms';
+import {
+  WelcomeSection,
+  SkillsSection,
+  NavSection,
+} from '@components/organisms';
 ---
 
 <Layout title="Welcome!">
   <main>
     <WelcomeSection client:only />
+    <NavSection client:only />
     <SkillsSection client:only />
   </main>
 </Layout>
