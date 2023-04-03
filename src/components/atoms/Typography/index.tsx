@@ -15,7 +15,7 @@ const Typography: FC<TypographyProps> = ({
     <Component
       tag={tag}
       content={text}
-      className={cx(className, sizes[tag])}
+      className={cx(sizes[tag], className)}
       {...props}
     />
   );

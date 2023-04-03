@@ -8,5 +8,5 @@ export const sizes: Record<TypographyTag, string> = {
   h5: 'text-xl font-bold sm:text-lg',
   h6: 'text-xl font-bold sm:text-lg',
   p: 'text-name',
-  span: 'text-name',
+  span: 'text-span-2xl',
 };
