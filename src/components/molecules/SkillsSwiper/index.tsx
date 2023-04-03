@@ -13,32 +13,32 @@ const SkillsSwiper: FC<SkillsSwiperProps> = () => {
     {
       'toolName': 'React',
       'toolMastery': '85%',
-      'toolIcon': 'ReactIcon',
+      'toolIcon': 'IconReact',
     },
     {
       'toolName': 'JS',
       'toolMastery': '85%',
-      'toolIcon': 'JSIcon',
+      'toolIcon': 'IconJS',
     },
     {
       'toolName': 'HTML',
       'toolMastery': '90%',
-      'toolIcon': 'HTMLIcon',
+      'toolIcon': 'IconHTML',
     },
     {
       'toolName': 'NEXT.js',
       'toolMastery': '30%',
-      'toolIcon': 'NextJSICon',
+      'toolIcon': 'IconNextJS',
     },
     {
       'toolName': 'Formik',
       'toolMastery': '80%',
-      'toolIcon': 'FormikIcon',
+      'toolIcon': 'IconFormik',
     },
     {
       'toolName': 'CSS',
       'toolMastery': '90%',
-      'toolIcon': 'CssIcon',
+      'toolIcon': 'IconCss',
     },
   ]);
   // useEffect(() => {
