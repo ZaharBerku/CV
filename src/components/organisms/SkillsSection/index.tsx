@@ -6,7 +6,7 @@ type SkillsSectionProps = {};
 
 const SkillsSection: FC<SkillsSectionProps> = () => {
   return (
-    <Box.Container className='bg-primary-gradient pb-12'>
+    <Box.Container className="bg-primary-gradient pb-12">
       <SectionTitle title="My skills" />
       <SkillsSwiper />
     </Box.Container>
