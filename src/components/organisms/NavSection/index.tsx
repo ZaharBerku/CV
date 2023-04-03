@@ -24,7 +24,7 @@ const NavSection: FC<NavSectionProps> = () => {
     },
   ]);
   return (
-    <Box.Container className="flex gap-5 justify-center items-center w-full">
+    <Box.Container className="flex gap-5 justify-center items-center w-full py-10">
       {navItems.map((item) => {
         const { id, name } = item;
         return <NavItem key={id} nameNav={name} queueNumber={id} />;
