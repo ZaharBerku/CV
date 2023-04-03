@@ -1,6 +1,6 @@
-import type { includedIcons } from './index.constants';
+import includedIcons from './Icons';
 
-export type IconType = keyof typeof includedIcons | string;
+export type IconType = keyof typeof includedIcons;
 
 export type IconProps = {
   type: IconType;
@@ -10,4 +10,6 @@ export type IconProps = {
   width?: string;
   viewHeight?: string;
   viewWidth?: string;
+  fill?: string;
+  opacity?: string;
 };

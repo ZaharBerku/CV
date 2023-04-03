@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import type { IconProps } from './index.types';
-import { includedIcons } from './index.constants';
+import includedIcons from './Icons';
 
 const Icon: FC<IconProps> = ({
   type,
@@ -18,15 +18,13 @@ const Icon: FC<IconProps> = ({
   }
 
   return (
-    (
-      <IconSelected
-        className={className}
-        onClick={onClick}
-        viewHeight={viewHeight}
-        viewWidth={viewWidth}
-        {...props}
-      />
-    ) || null
+    <IconSelected
+      className={className}
+      onClick={onClick}
+      viewHeight={viewHeight}
+      viewWidth={viewWidth}
+      {...props}
+    />
   );
 };
 
