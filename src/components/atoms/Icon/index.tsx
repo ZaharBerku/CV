@@ -6,8 +6,6 @@ const Icon: FC<IconProps> = ({
   type,
   className,
   onClick,
-  viewHeight,
-  viewWidth,
   ...props
 }) => {
   const IconSelected = (includedIcons as any)[type];
@@ -21,8 +19,6 @@ const Icon: FC<IconProps> = ({
     <IconSelected
       className={className}
       onClick={onClick}
-      viewHeight={viewHeight}
-      viewWidth={viewWidth}
       {...props}
     />
   );
