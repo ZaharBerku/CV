@@ -13,6 +13,110 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
     },
+    text: {
+      name: {
+        DEFAULT: {
+          fontWeight: "400",
+          fontSize: "14px",
+          lineHeight: "143%",
+        },
+        xs: {
+          fontSize: "18px",
+        },
+        sm: {
+          fontSize: "24px",
+        },
+        md: {
+          fontSize: "30px",
+        },
+      },
+      "body-7xl": {
+        DEFAULT: {
+          fontWeight: "400",
+          fontSize: "230px",
+          lineHeight: "60%",
+        },
+      },
+      "body-6xl": {
+        DEFAULT: {
+          fontWeight: "700",
+          fontSize: "45px",
+          lineHeight: "110%",
+        },
+        xs: {
+          fontSize: "60px",
+        },
+        sm: {
+          fontSize: "80px",
+        },
+        md: {
+          fontSize: "104px",
+        },
+      },
+      "body-4xl": {
+        DEFAULT: {
+          fontWeight: "700",
+          fontSize: "16px",
+          lineHeight: "144%",
+        },
+        xs: {
+          fontSize: "20px",
+        },
+        sm: {
+          fontSize: "26px",
+        },
+        md: {
+          fontSize: "32px",
+        },
+      },
+      "span-2xl": {
+        DEFAULT: {
+          fontWeight: "700",
+          fontSize: "10px",
+          lineHeight: "144%",
+        },
+        xs: {
+          fontSize: "12px",
+        },
+        sm: {
+          fontSize: "14px",
+        },
+        md: {
+          fontSize: "18px",
+        },
+      },
+      "span-xl": {
+        DEFAULT: {
+          fontWeight: "400",
+          fontSize: "9px",
+          lineHeight: "144%",
+        },
+        xs: {
+          fontSize: "11px",
+        },
+        sm: {
+          fontSize: "13px",
+        },
+        md: {
+          fontSize: "16px",
+        },
+      },
+      "primary-button": {
+        DEFAULT: {
+          fontSize: "12px",
+          lineHeight: "145%",
+        },
+        xs: {
+          fontSize: "14px",
+        },
+        sm: {
+          fontSize: "19px",
+        },
+        md: {
+          fontSize: "24px",
+        },
+      },
+    },
     extend: {
       colors: ({ colors }) => ({
         ...colors,
@@ -385,110 +489,6 @@ module.exports = {
         17.5: "17.5rem",
         23.25: "23.25rem",
         31.25: "31.25rem",
-      },
-      text: {
-        "body-7xl": {
-          DEFAULT: {
-            fontWeight: "400",
-            fontSize: "230px",
-            lineHeight: "60%",
-          },
-        },
-        "body-6xl": {
-          DEFAULT: {
-            fontWeight: "700",
-            fontSize: "45px",
-            lineHeight: "110%",
-          },
-          xs: {
-            fontSize: "60px",
-          },
-          sm: {
-            fontSize: "80px",
-          },
-          md: {
-            fontSize: "104px",
-          },
-        },
-        "body-4xl": {
-          DEFAULT: {
-            fontWeight: "700",
-            fontSize: "16px",
-            lineHeight: "144%",
-          },
-          xs: {
-            fontSize: "20px",
-          },
-          sm: {
-            fontSize: "26px",
-          },
-          md: {
-            fontSize: "32px",
-          },
-        },
-        "span-2xl": {
-          DEFAULT: {
-            fontWeight: "700",
-            fontSize: "10px",
-            lineHeight: "144%",
-          },
-          xs: {
-            fontSize: "12px",
-          },
-          sm: {
-            fontSize: "14px",
-          },
-          md: {
-            fontSize: "18px",
-          },
-        },
-        "span-xl": {
-          DEFAULT: {
-            fontWeight: "400",
-            fontSize: "9px",
-            lineHeight: "144%",
-          },
-          xs: {
-            fontSize: "11px",
-          },
-          sm: {
-            fontSize: "13px",
-          },
-          md: {
-            fontSize: "16px",
-          },
-        },
-        name: {
-          DEFAULT: {
-            fontWeight: "400",
-            fontSize: "14px",
-            lineHeight: "143%",
-          },
-          xs: {
-            fontSize: "18px",
-          },
-          sm: {
-            fontSize: "24px",
-          },
-          md: {
-            fontSize: "30px",
-          },
-        },
-        "primary-button": {
-          DEFAULT: {
-            fontSize: "12px",
-            lineHeight: "145%",
-          },
-          xs: {
-            fontSize: "14px",
-          },
-          sm: {
-            fontSize: "19px",
-          },
-          md: {
-            fontSize: "24px",
-          },
-        },
       },
     },
   },
