@@ -1,5 +1,5 @@
-import type { FC } from 'react';
-import { Box, Typography } from '@components/atoms';
+import type { FC } from "react";
+import { Box, Typography } from "@components/atoms";
 
 type SectionTitleProps = { title: string };
 

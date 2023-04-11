@@ -1,11 +1,11 @@
-import type { FC } from 'react';
-import cx from 'classnames';
-import { createComponent } from '@utils/helpers';
-import type { TypographyProps } from './index.types';
-import { sizes } from './index.constants';
+import type { FC } from "react";
+import cx from "classnames";
+import { createComponent } from "@utils/helpers";
+import type { TypographyProps } from "./index.types";
+import { sizes } from "./index.constants";
 
 const Typography: FC<TypographyProps> = ({
-  tag = 'p',
+  tag = "p",
   text = null,
   className,
   ...props
@@ -14,7 +14,7 @@ const Typography: FC<TypographyProps> = ({
   return (
     <Component
       tag={tag}
-      content={text}
+      insideContent={text}
       className={cx(sizes[tag], className)}
       {...props}
     />

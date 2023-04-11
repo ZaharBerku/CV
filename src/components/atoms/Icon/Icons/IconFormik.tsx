@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { IconProps } from '../index.types';
+import { FC } from "react";
+import { IconProps } from "../index.types";
 
 const IconFormik: FC<IconProps> = ({ width, height, ...props }) => {
   return (

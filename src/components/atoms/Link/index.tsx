@@ -1,10 +1,10 @@
-import { FC, MouseEvent } from 'react';
-import { LinkProps } from './index.types';
+import type { FC, MouseEvent } from "react";
+import type { LinkProps } from "./index.types";
 
-const Link: FC<LinkProps> = ({ href = '#', children, onClick, ...props }) => {
+const Link: FC<LinkProps> = ({ href = "#", children, ...props }) => {
   const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
-    window.open(href, '_blank');
+    window.open(href, "_blank");
     // onClick(event);
   };
 

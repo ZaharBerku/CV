@@ -1,11 +1,11 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
 type EventHandler = (event: Event | MouseEvent) => void;
 
 const useEventListener = (
   eventName: string,
   handler: EventHandler,
-  element: HTMLElement | Window = window,
+  element: HTMLElement | Window = window
 ): void => {
   const savedHandler = useRef<EventHandler>();
 

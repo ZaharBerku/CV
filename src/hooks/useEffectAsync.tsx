@@ -1,4 +1,4 @@
-import { useEffect, DependencyList } from 'react';
+import { useEffect, DependencyList } from "react";
 
 const useEffectAsync = (effect: () => void, inputs: DependencyList) => {
   useEffect(() => {

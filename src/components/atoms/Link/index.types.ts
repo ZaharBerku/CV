@@ -1,4 +1,4 @@
-import { ReactNode, PropsWithChildren, HTMLAttributes } from 'react';
+import { ReactNode, PropsWithChildren, HTMLAttributes } from "react";
 
 export type LinkProps = PropsWithChildren<{
   href?: string;

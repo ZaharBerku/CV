@@ -1,5 +1,5 @@
-import type { FC } from 'react';
-import { Box, Typography, Link } from '@components/atoms';
+import type { FC } from "react";
+import { Typography, Link } from "@components/atoms";
 
 type NavItemProps = {
   queueNumber: number;

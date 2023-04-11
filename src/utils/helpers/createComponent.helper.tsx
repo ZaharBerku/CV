@@ -1,24 +1,29 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef } from "react";
 import type {
   ElementType,
   HTMLAttributes,
   PropsWithChildren,
   ReactNode,
-} from 'react';
+} from "react";
 
 export type ComponentProps<T> = PropsWithChildren<{
   tag: ElementType;
-  content?: ReactNode | string;
+  insideContent?: ReactNode | string | null;
 }> &
   HTMLAttributes<T>;
 
 const Component = <T,>(
-  { tag: Component, children, content, ...props }: ComponentProps<T>,
-  ref: React.ForwardedRef<T>,
+  {
+    tag: Component,
+    children,
+    insideContent = null,
+    ...props
+  }: ComponentProps<T>,
+  ref: React.ForwardedRef<T>
 ) => {
   return (
     <Component ref={ref} {...props}>
-      {children || content}
+      {children || insideContent}
     </Component>
   );
 };

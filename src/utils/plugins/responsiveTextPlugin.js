@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin');
+const plugin = require("tailwindcss/plugin");
 
 const parsePx = (px) => {
   return Number(px.slice(0, -2));
@@ -10,8 +10,8 @@ const pxToRem = (px) => {
 
 module.exports = ({ extraFonts }) =>
   plugin(({ addComponents, theme }) => {
-    const textTheme = theme('text');
-    const screens = theme('screens');
+    const textTheme = theme("text");
+    const screens = theme("screens");
 
     const createStyles = (config, extraFont) => {
       const multiplicator = extraFont?.multiplicator || 1;

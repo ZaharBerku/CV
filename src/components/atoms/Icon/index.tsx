@@ -1,13 +1,8 @@
-import type { FC } from 'react';
-import type { IconProps } from './index.types';
-import includedIcons from './Icons';
+import type { FC } from "react";
+import type { IconProps } from "./index.types";
+import includedIcons from "./Icons";
 
-const Icon: FC<IconProps> = ({
-  type,
-  className,
-  onClick,
-  ...props
-}) => {
+const Icon: FC<IconProps> = ({ type, className, onClick, ...props }) => {
   const IconSelected = (includedIcons as any)[type];
 
   if (!IconSelected) {
@@ -15,13 +10,7 @@ const Icon: FC<IconProps> = ({
     return null;
   }
 
-  return (
-    <IconSelected
-      className={className}
-      onClick={onClick}
-      {...props}
-    />
-  );
+  return <IconSelected className={className} onClick={onClick} {...props} />;
 };
 
 export { Icon };

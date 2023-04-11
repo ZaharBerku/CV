@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { IconProps } from '../index.types';
+import { FC } from "react";
+import { IconProps } from "../index.types";
 
 const IconReact: FC<IconProps> = ({ width, height, ...props }) => {
   return (

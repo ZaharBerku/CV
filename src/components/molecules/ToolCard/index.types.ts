@@ -1,4 +1,4 @@
-import { IconType } from '@components/atoms/Icon/index.types';
+import { IconType } from "@components/atoms/Icon/index.types";
 
 export type ToolCardProps = {
   name: string;

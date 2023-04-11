@@ -1,44 +1,41 @@
-import { FC, useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
-import { Box } from '@components/atoms';
-import { ToolCard } from '@components/molecules';
-import { getSkills } from '@services/index';
-import 'swiper/css';
+import { FC, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import { Box } from "@components/atoms";
+import { ToolCard } from "@components/molecules";
+import "swiper/css";
 
-type SkillsSwiperProps = {};
-
-const SkillsSwiper: FC<SkillsSwiperProps> = () => {
-  const [sliders, setSleders] = useState([
+const SkillsSwiper: FC = () => {
+  const [sliders] = useState([
     {
-      'toolName': 'React',
-      'toolMastery': '85%',
-      'toolIcon': 'IconReact',
+      toolName: "React",
+      toolMastery: "85%",
+      toolIcon: "IconReact",
     },
     {
-      'toolName': 'JS',
-      'toolMastery': '85%',
-      'toolIcon': 'IconJS',
+      toolName: "JS",
+      toolMastery: "85%",
+      toolIcon: "IconJS",
     },
     {
-      'toolName': 'HTML',
-      'toolMastery': '90%',
-      'toolIcon': 'IconHTML',
+      toolName: "HTML",
+      toolMastery: "90%",
+      toolIcon: "IconHTML",
     },
     {
-      'toolName': 'NEXT.js',
-      'toolMastery': '30%',
-      'toolIcon': 'IconNextJS',
+      toolName: "NEXT.js",
+      toolMastery: "30%",
+      toolIcon: "IconNextJS",
     },
     {
-      'toolName': 'Formik',
-      'toolMastery': '80%',
-      'toolIcon': 'IconFormik',
+      toolName: "Formik",
+      toolMastery: "80%",
+      toolIcon: "IconFormik",
     },
     {
-      'toolName': 'CSS',
-      'toolMastery': '90%',
-      'toolIcon': 'IconCss',
+      toolName: "CSS",
+      toolMastery: "90%",
+      toolIcon: "IconCss",
     },
   ]);
   // useEffect(() => {

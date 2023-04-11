@@ -1,14 +1,15 @@
-import { FC } from 'react';
-import { IconProps } from '../index.types';
+import type { FC } from "react";
+import type { IconProps } from "../index.types";
 
 const IconJS: FC<IconProps> = ({ width, height, ...props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="72"
-      height="73"
+      width={width || 72}
+      height={height || 73}
       fill="none"
       viewBox="0 0 72 73"
+      {...props}
     >
       <g clipPath="url(#clip0_68_9826)">
         <path fill="#F0DB4F" d="M.792.994h70.416v70.417H.792V.994z"></path>

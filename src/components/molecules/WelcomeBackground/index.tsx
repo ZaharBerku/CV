@@ -1,9 +1,9 @@
-import { useMemo } from 'react';
-import type { FC } from 'react';
-import { Box } from '@components/atoms';
-import { useWindowSize } from '@hooks/index';
-import { getNumberOfCells } from './index.helpers';
-import { CELL_SIZE } from './index.constants';
+import { useMemo } from "react";
+import type { FC } from "react";
+import { Box } from "@components/atoms";
+import { useWindowSize } from "@hooks/index";
+import { getNumberOfCells } from "./index.helpers";
+import { CELL_SIZE } from "./index.constants";
 
 const WelcomeBackground: FC = () => {
   const { width, height } = useWindowSize();
@@ -11,7 +11,7 @@ const WelcomeBackground: FC = () => {
   const cellX = useMemo(() => getNumberOfCells(width, CELL_SIZE), [width]);
   return (
     <Box.Wrapper
-      className={'h-screen grid -z-10'}
+      className={"h-screen grid -z-10"}
       style={{
         gridTemplateColumns: `repeat(${cellX}, 1fr)`,
         gridTemplateRows: `repeat(${cellY}, 1fr)`,

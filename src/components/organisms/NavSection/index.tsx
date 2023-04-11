@@ -1,26 +1,24 @@
-import { FC, useState } from 'react';
-import { Box } from '@components/atoms';
-import { NavItem } from '@components/molecules';
+import { FC, useState } from "react";
+import { Box } from "@components/atoms";
+import { NavItem } from "@components/molecules";
 
-type NavSectionProps = {};
-
-const NavSection: FC<NavSectionProps> = () => {
-  const [navItems, setNavItems] = useState([
+const NavSection: FC = () => {
+  const [navItems] = useState([
     {
       id: 1,
-      name: 'About my knowledge',
+      name: "About my knowledge",
     },
     {
       id: 2,
-      name: 'My project',
+      name: "My project",
     },
     {
       id: 3,
-      name: 'Recommendation',
+      name: "Recommendation",
     },
     {
       id: 4,
-      name: 'Let’s talk',
+      name: "Let’s talk",
     },
   ]);
   return (
