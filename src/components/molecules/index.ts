@@ -6,3 +6,4 @@ export { SkillsSwiper } from "./SkillsSwiper";
 export { NavItem } from "./NavItem";
 export { TypedText } from "./TypedText";
 export { TagWrapper } from "./TagWrapper";
+export { MyInfo } from "./MyInfo";
