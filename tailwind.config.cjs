@@ -164,6 +164,7 @@ module.exports = {
         inner: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
         none: "none",
         card: "4px 5px 26px rgba(217, 217, 217, 0.35)",
+        avatar: "11px 11px 0px #9747FF",
       },
       container: {},
       flex: {
@@ -484,6 +485,7 @@ module.exports = {
       spacing: {
         px: "1px",
         px2: "2px",
+        0.68: "0.6875rem",
         3.4: "3.438rem",
         17.3: "17.313rem",
         17.5: "17.5rem",
