@@ -7,3 +7,4 @@ export { NavItem } from "./NavItem";
 export { TypedText } from "./TypedText";
 export { TagWrapper } from "./TagWrapper";
 export { MyInfo } from "./MyInfo";
+export { Avatar } from "./Avatar";

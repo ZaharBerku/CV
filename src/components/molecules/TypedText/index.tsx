@@ -4,7 +4,7 @@ import { TagWrapper } from "@components/molecules";
 
 const TypedText: FC = () => {
   return (
-    <div>
+    <div className="flex-wrapper-center gap-4 justify-start">
       <TagWrapper text="code" />
       <Typed
         strings={["I’ll create your project"]}
