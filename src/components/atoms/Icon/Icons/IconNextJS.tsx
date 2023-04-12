@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { IconProps } from "../index.types";
+import type { FC } from "react";
+import type { IconProps } from "../index.types";
 
 const IconNextJS: FC<IconProps> = ({ width, height, ...props }) => {
   return (
