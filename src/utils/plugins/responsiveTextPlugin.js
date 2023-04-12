@@ -20,6 +20,7 @@ module.exports = ({ extraFonts }) =>
         fontSize: pxToRem(parsePx(config.DEFAULT.fontSize) * multiplicator),
         lineHeight: config.DEFAULT.lineHeight,
         letterSpacing: config.DEFAULT.letterSpacing,
+        fontWeight: config.DEFAULT.fontWeight,
       };
 
       if (extraFont) {
@@ -32,6 +33,7 @@ module.exports = ({ extraFonts }) =>
             fontSize: pxToRem(parsePx(config[key].fontSize) * multiplicator),
             lineHeight: config[key].lineHeight,
             letterSpacing: config[key].letterSpacing,
+            fontWeight: config[key].fontWeight,
           };
         }
       });
