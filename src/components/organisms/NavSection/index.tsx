@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { Box } from "@components/atoms";
 import { NavItem } from "@components/molecules";
+import { Container } from "@layouts/Container";
 
 const NavSection: FC = () => {
   const [navItems] = useState([
@@ -22,11 +23,15 @@ const NavSection: FC = () => {
     },
   ]);
   return (
-    <Box.Container className="flex gap-5 justify-center items-center w-full py-10">
-      {navItems.map((item) => {
-        const { id, name } = item;
-        return <NavItem key={id} nameNav={name} queueNumber={id} />;
-      })}
+    <Box.Container className="w-full">
+      <Container>
+        <Box.Wrapper className="flex gap-5 justify-center items-center w-full py-10">
+          {navItems.map((item) => {
+            const { id, name } = item;
+            return <NavItem key={id} nameNav={name} queueNumber={id} />;
+          })}
+        </Box.Wrapper>
+      </Container>
     </Box.Container>
   );
 };
