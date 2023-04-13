@@ -8,7 +8,9 @@ type ContainerProps = PropsWithChildren<{
 
 const Container: FC<ContainerProps> = ({ children, className }) => {
   return (
-    <Box.Wrapper className={cx("max-w-screen-2lg m-auto", className)}>
+    <Box.Wrapper
+      className={cx("max-w-screen-2lg m-auto px-5 box-border", className)}
+    >
       {children}
     </Box.Wrapper>
   );

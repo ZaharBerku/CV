@@ -34,18 +34,27 @@ module.exports = {
       "body-7xl": {
         DEFAULT: {
           fontWeight: "400",
-          fontSize: "230px",
+          fontSize: "92px",
           lineHeight: "60%",
+        },
+        xs: {
+          fontSize: "138px",
+        },
+        sm: {
+          fontSize: "184px",
+        },
+        md: {
+          fontSize: "230px",
         },
       },
       "body-6xl": {
         DEFAULT: {
           fontWeight: "700",
-          fontSize: "45px",
+          fontSize: "40px",
           lineHeight: "110%",
         },
         xs: {
-          fontSize: "60px",
+          fontSize: "48px",
         },
         sm: {
           fontSize: "80px",
@@ -484,10 +493,12 @@ module.exports = {
         50: "50",
       },
       spacing: {
+        "2xs": "22rem",
         px: "1px",
         px2: "2px",
         0.68: "0.6875rem",
         3.4: "3.438rem",
+        4.68: "4.6875rem",
         17.3: "17.313rem",
         17.5: "17.5rem",
         23.25: "23.25rem",
@@ -505,6 +516,7 @@ module.exports = {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          flexDirection: "row",
         },
         ".flex-wrapper-column": {
           display: "flex",

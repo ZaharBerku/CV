@@ -5,7 +5,7 @@ import { Container } from "@layouts/Container";
 
 const SkillsSection: FC = () => {
   return (
-    <Box.Container className="bg-primary-gradient pb-12">
+    <Box.Container className="bg-primary-gradient pb-6 md:pb-12">
       <Container>
         <SectionTitle title="My skills" />
         <SkillsSwiper />

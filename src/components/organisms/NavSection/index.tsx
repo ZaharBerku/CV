@@ -25,7 +25,7 @@ const NavSection: FC = () => {
   return (
     <Box.Container className="w-full">
       <Container>
-        <Box.Wrapper className="flex gap-5 justify-center items-center w-full py-10">
+        <Box.Wrapper className="flex-wrapper-column sm:flex-wrapper-center gap-5 w-full py-10">
           {navItems.map((item) => {
             const { id, name } = item;
             return <NavItem key={id} nameNav={name} queueNumber={id} />;

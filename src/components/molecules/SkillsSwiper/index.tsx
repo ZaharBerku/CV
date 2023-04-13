@@ -38,29 +38,20 @@ const SkillsSwiper: FC = () => {
       toolIcon: "IconCss",
     },
   ]);
-  // useEffect(() => {
-  //   (async () => {
-  //     const { data } = await getSkills();
-  //     setSleders(data);
-  //   })();
-  // }, []);
+
   return (
-    <Box.Wrapper className=" px-8">
+    <Box.Wrapper>
       <Swiper
         className="max-w-6xl"
-        slidesPerView={1}
+        slidesPerView={3}
         spaceBetween={10}
-        modules={[Autoplay]}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: true,
-        }}
-        loop={true}
+        // modules={[Autoplay]}
+        // autoplay={{
+        //   delay: 2000,
+        //   disableOnInteraction: true,
+        // }}
+        // loop={false}
         breakpoints={{
-          400: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
           640: {
             slidesPerView: 3,
             spaceBetween: 10,

@@ -22,8 +22,8 @@ const MyInfo: FC = () => {
           My silence in code:
         </Typography>
         <List>
-          {items.map((item) => {
-            return <List.Item>{item}</List.Item>;
+          {items.map((item, index) => {
+            return <List.Item key={index}>{item}</List.Item>;
           })}
         </List>
       </Box>

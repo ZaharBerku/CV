@@ -5,9 +5,9 @@ import { Container } from "@layouts/Container";
 
 const MySection: FC = () => {
   return (
-    <Box.Container className="p-16">
+    <Box.Container className="pb-10">
       <Container>
-        <Box.Wrapper className="flex-wrapper-center gap-8">
+        <Box.Wrapper className="flex-wrapper-column flex-col-reverse gap-8 md:flex-wrapper-center">
           <MyInfo />
           <Avatar />
         </Box.Wrapper>
