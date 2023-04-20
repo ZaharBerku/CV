@@ -30,7 +30,12 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "prettier/prettier": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "quotes": ["warn", "double"],
     "semi": ["error", "always"],
     "import/order": ["error"],
