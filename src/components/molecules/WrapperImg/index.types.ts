@@ -1,4 +1,4 @@
-import type { Classes } from "@types/index";
+import type { Classes } from "@utils/types/index";
 
 export type ClassesNames = "circle" | "square";
 
