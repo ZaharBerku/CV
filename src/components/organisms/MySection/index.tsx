@@ -1,7 +1,8 @@
 import type { FC } from "react";
 import { Box } from "@components/atoms";
-import { MyInfo, Avatar } from "@components/molecules";
+import { MyInfo, WrapperImg } from "@components/molecules";
 import { Container } from "@layouts/Container";
+import avatar from "@assets/images/avatar.png";
 
 const MySection: FC = () => {
   return (
@@ -9,7 +10,7 @@ const MySection: FC = () => {
       <Container>
         <Box.Wrapper className="flex-wrapper-column flex-col-reverse gap-8 md:flex-wrapper-center">
           <MyInfo />
-          <Avatar />
+          <WrapperImg src={avatar} alt="avatar" />
         </Box.Wrapper>
       </Container>
     </Box.Container>

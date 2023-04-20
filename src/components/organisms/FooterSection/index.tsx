@@ -1,7 +1,8 @@
 import type { FC } from "react";
 import { Box } from "@components/atoms";
-import { ContentFooter, AvatarFooter } from "@components/molecules";
+import { ContentFooter, WrapperImg } from "@components/molecules";
 import { Container } from "@layouts/Container";
+import avatar from "@assets/images/avatar.png";
 
 const FooterSection: FC = () => {
   return (
@@ -9,7 +10,7 @@ const FooterSection: FC = () => {
       <Container>
         <Box className="flex-wrapper-column flex-col-reverse gap-9 md:flex-wrapper-center md:justify-between">
           <ContentFooter />
-          <AvatarFooter />
+          <WrapperImg src={avatar} alt="avatar" classesName="circle" />
         </Box>
       </Container>
     </Box.Container>
