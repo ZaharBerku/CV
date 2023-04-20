@@ -1,11 +1,42 @@
 import type { FC } from "react";
+import cx from "classnames";
 import { createComponent } from "@utils/helpers";
-import type { ListProps, ItemProps } from "./index.types";
+import type {
+  ListProps,
+  ItemProps,
+  WrapperWithTitleProps,
+} from "./index.types";
 
 const Component = createComponent<HTMLElement>();
 
-const ListComponent: FC<ListProps> = ({ tag = "ul", ...props }) => {
-  return <Component tag={tag} {...props} />;
+const WrapperWithTitle: FC<WrapperWithTitleProps> = ({
+  children,
+  title,
+  classes,
+}) => {
+  return (
+    <figure className={classes?.wrapper}>
+      <figcaption className={classes?.title}>{title}</figcaption>
+      {children}
+    </figure>
+  );
+};
+
+const ListComponent: FC<ListProps> = ({
+  tag = "ul",
+  title,
+  classes = {},
+  className,
+  ...props
+}) => {
+  const { container, ...classNames } = classes;
+  return title ? (
+    <WrapperWithTitle classes={classNames} title={title}>
+      <Component tag={tag} className={cx(className, container)} {...props} />
+    </WrapperWithTitle>
+  ) : (
+    <Component tag={tag} className={className} {...props} />
+  );
 };
 
 const Item: FC<ItemProps> = ({ tag = "li", text, ...props }) => {
