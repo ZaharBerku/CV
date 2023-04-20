@@ -9,3 +9,4 @@ export { TagWrapper } from "./TagWrapper";
 export { MyInfo } from "./MyInfo";
 export { ContentFooter } from "./ContentFooter";
 export { WrapperImg } from "./WrapperImg";
+export { Projects } from "./Projects";
