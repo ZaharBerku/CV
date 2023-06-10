@@ -35,14 +35,14 @@ const ListInfoProject: FC<ListInfoProjectProps> = ({ info, title }) => {
 const Project: FC<ProjectProps> = ({ project }) => {
   const { img, title, info } = project;
   return (
-    <Box className="flex-wrapper-center h-96 gap-24 odd:flex-row-reverse">
+    <Box className="flex flex-col justify-center h-full max-w-23.25 gap-12 md:!flex-wrapper-center md:max-w-full md:h-96 md:gap-24 md:odd:!flex-row-reverse">
       <WrapperImg
         src={img}
         alt={title}
         classes={{
-          wrapper: "w-23.25 h-23.25",
-          box: "w-23.25 h-23.25",
-          img: "w-23.25 h-23.25",
+          wrapper: "w-full sm:max-w-23.25 sm:h-23.25",
+          box: "w-full sm:max-w-23.25 sm:h-23.25",
+          img: "w-full h-64 sm:max-w-23.25 sm:h-23.25",
         }}
       />
       <ListInfoProject title={title} info={info} />
