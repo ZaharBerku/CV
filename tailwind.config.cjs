@@ -31,6 +31,22 @@ module.exports = {
           fontSize: "30px",
         },
       },
+      title: {
+        DEFAULT: {
+          fontWeight: "700",
+          fontSize: "25px",
+          lineHeight: "143%",
+        },
+        xs: {
+          fontSize: "30px",
+        },
+        sm: {
+          fontSize: "38px",
+        },
+        md: {
+          fontSize: "48px",
+        },
+      },
       "body-7xl": {
         DEFAULT: {
           fontWeight: "400",
@@ -61,6 +77,22 @@ module.exports = {
         },
         md: {
           fontSize: "104px",
+        },
+      },
+      "body-5xl": {
+        DEFAULT: {
+          fontWeight: "700",
+          fontSize: "19px",
+          lineHeight: "144%",
+        },
+        xs: {
+          fontSize: "24px",
+        },
+        sm: {
+          fontSize: "30px",
+        },
+        md: {
+          fontSize: "38px",
         },
       },
       "body-4xl": {
@@ -497,6 +529,7 @@ module.exports = {
         "2xs": "22rem",
         px: "1px",
         px2: "2px",
+        0.37: "0.375rem",
         0.68: "0.6875rem",
         3.4: "3.438rem",
         4.68: "4.6875rem",

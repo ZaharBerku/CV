@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { Box, Typography, Button } from "@components/atoms";
+import { Box, Typography } from "@components/atoms";
 
 const ContentFooter: FC = () => {
   return (
@@ -8,7 +8,7 @@ const ContentFooter: FC = () => {
         className="text-center text-body-4xl font-normal md:text-start"
         text="Let’s take our relationship to the next level your business"
       />
-      <Button>Let’s talk</Button>
+      {/*<Button>Let’s talk</Button>*/}
     </Box.Wrapper>
   );
 };

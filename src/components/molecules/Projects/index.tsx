@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import { Box, List } from "@components/atoms";
-import { WrapperImg } from "@components/molecules";
+// import { WrapperImg } from "@components/molecules";
 import type {
   ProjectsProps,
   ProjectProps,
@@ -17,10 +17,10 @@ const ListInfoProject: FC<ListInfoProjectProps> = ({ info, title }) => {
         title: "text-primary-button font-bold mb-6",
       }}
     >
-      {info.map((item) => {
+      {info.map((item, index) => {
         const { name, text } = item;
         return (
-          <List.Item className="text-span-xl">
+          <List.Item key={index} className="text-span-xl">
             <Box className="font-bold" tag="span">
               {name}:{" "}
             </Box>
@@ -33,18 +33,18 @@ const ListInfoProject: FC<ListInfoProjectProps> = ({ info, title }) => {
 };
 
 const Project: FC<ProjectProps> = ({ project }) => {
-  const { img, title, info } = project;
+  const { title, info } = project;
   return (
-    <Box className="flex flex-col justify-center h-full max-w-23.25 gap-12 md:!flex-wrapper-center md:max-w-full md:h-96 md:gap-24 md:odd:!flex-row-reverse">
-      <WrapperImg
-        src={img}
-        alt={title}
-        classes={{
-          wrapper: "w-full sm:max-w-23.25 sm:h-23.25",
-          box: "w-full sm:max-w-23.25 sm:h-23.25",
-          img: "w-full h-64 sm:max-w-23.25 sm:h-23.25",
-        }}
-      />
+    <Box className="flex flex-col justify-center h-full max-w-23.25 gap-12 md:!flex-wrapper-center md:max-w-full md:gap-24">
+      {/*<WrapperImg*/}
+      {/*  src={img}*/}
+      {/*  alt={title}*/}
+      {/*  classes={{*/}
+      {/*    wrapper: "w-full sm:max-w-23.25 sm:h-23.25",*/}
+      {/*    box: "w-full sm:max-w-23.25 sm:h-23.25",*/}
+      {/*    img: "w-full h-64 sm:max-w-23.25 sm:h-23.25",*/}
+      {/*  }}*/}
+      {/*/>*/}
       <ListInfoProject title={title} info={info} />
     </Box>
   );
@@ -52,9 +52,9 @@ const Project: FC<ProjectProps> = ({ project }) => {
 
 const Projects: FC<ProjectsProps> = ({ projects }) => {
   return (
-    <Box.Wrapper className="flex-wrapper-column gap-11">
-      {projects.map((project) => {
-        return <Project project={project} />;
+    <Box.Wrapper className="flex-wrapper-column gap-11 md:items-start">
+      {projects.map((project, index) => {
+        return <Project key={index} project={project} />;
       })}
     </Box.Wrapper>
   );

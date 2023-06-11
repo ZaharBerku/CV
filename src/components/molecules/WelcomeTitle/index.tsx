@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { Box, Typography, Button } from "@components/atoms";
+import { Box, Typography } from "@components/atoms";
 
 const WelcomeTitle: FC = () => {
   return (
@@ -15,12 +15,12 @@ const WelcomeTitle: FC = () => {
           tag={"h1"}
           text={"Welcome to my website"}
         />
-        <Button
-          className="pointer-events-auto mt-6"
-          onClick={() => console.log("click")}
-        >
-          Discover
-        </Button>
+        {/*<Button*/}
+        {/*  className="pointer-events-auto mt-6"*/}
+        {/*  onClick={() => console.log("click")}*/}
+        {/*>*/}
+        {/*  Discover*/}
+        {/*</Button>*/}
       </Box.Wrapper>
     </>
   );
