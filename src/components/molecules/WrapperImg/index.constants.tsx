@@ -9,7 +9,7 @@ export const classes: ClassesType = {
   },
   square: {
     wrapper: "relative max-w-xs h-xs w-full md:max-w-96 md:h-96",
-    box: " max-w-xs md:max-w-full absolute w-full border border-black rounded-2sm top-0.68 left-0.68 -bottom-0.68",
-    img: "shadow-avatar rounded-2sm max-w-xs md:max-w-full",
+    box: "max-w-xs md:max-w-full absolute w-full border border-black rounded-2sm top-0.68 left-0.68 -bottom-0.68",
+    img: "shadow-avatar rounded-2sm w-full max-w-xs md:max-w-full",
   },
 };

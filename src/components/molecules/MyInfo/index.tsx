@@ -53,7 +53,7 @@ const MyInfo: FC = () => {
         <Typography tag="h3" className="text-black text-title">
           10 reasons
         </Typography>
-        <Typography tag="p" className="text-body-5xl font-bold text-primary">
+        <Typography tag="p" className="text-body-5xl font-bold text-primary mb-5">
           why you require me
         </Typography>
         <ListReasons />

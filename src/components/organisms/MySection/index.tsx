@@ -8,14 +8,8 @@ const MySection: FC = () => {
   return (
     <Box.Container className="pb-10">
       <Container>
-        <Box.Wrapper className="max-w-xl m-auto flex-wrapper-column px-10 flex-col gap-14 md:gap-x-24 md:px-0 md:max-w-full md:flex-wrapper-center">
-          <WrapperImg
-            classes={{
-              wrapper: "",
-            }}
-            src={avatar}
-            alt="avatar"
-          />
+        <Box.Wrapper className="max-w-xl m-auto flex-wrapper-column px-4 flex-col gap-14 md:gap-x-24 md:px-0 md:max-w-full md:flex-wrapper-center">
+          <WrapperImg src={avatar} alt="avatar" />
           <MyInfo />
         </Box.Wrapper>
       </Container>

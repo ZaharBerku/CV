@@ -45,12 +45,12 @@ const SkillsSwiper: FC = () => {
         className="max-w-6xl"
         slidesPerView={3}
         spaceBetween={10}
-        // modules={[Autoplay]}
-        // autoplay={{
-        //   delay: 2000,
-        //   disableOnInteraction: true,
-        // }}
-        // loop={false}
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: true,
+        }}
+        loop={false}
         breakpoints={{
           640: {
             slidesPerView: 3,

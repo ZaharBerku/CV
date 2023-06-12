@@ -34,11 +34,11 @@ module.exports = {
       title: {
         DEFAULT: {
           fontWeight: "700",
-          fontSize: "25px",
+          fontSize: "35px",
           lineHeight: "143%",
         },
         xs: {
-          fontSize: "30px",
+          fontSize: "35px",
         },
         sm: {
           fontSize: "38px",
@@ -82,11 +82,11 @@ module.exports = {
       "body-5xl": {
         DEFAULT: {
           fontWeight: "700",
-          fontSize: "19px",
+          fontSize: "30px",
           lineHeight: "144%",
         },
         xs: {
-          fontSize: "24px",
+          fontSize: "30px",
         },
         sm: {
           fontSize: "30px",

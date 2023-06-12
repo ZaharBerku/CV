@@ -29,4 +29,19 @@ export const skills = [
     toolMastery: "90%",
     toolIcon: "CssIcon",
   },
+  {
+    toolName: "react-hook-form",
+    toolMastery: "90%",
+    toolIcon: "IconReactHookForm",
+  },
+  {
+    toolName: "Tailwind CSS",
+    toolMastery: "70%",
+    toolIcon: "IconTailwindCss",
+  },
+  {
+    toolName: "TypeScript",
+    toolMastery: "70%",
+    toolIcon: "IconTS",
+  },
 ];
